@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+
+<body>
+
+ <h1> Bài 3</h1>
+ <input type="text" id="A1">
+ <input type="text" id="B1">
+ <button onmouseout="Add()">Diện Tích</button>
+ <b>Diện tích</b>: <div id = "result"></div>
+<script>
+    function Add() {
+        let A = document.getElementById("a").value;
+        let B = document.getElementById("b").value;
+        let result = A * B
+        document.getElementById("result").innerHTML = result;
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
