@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vape-Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+    <form class="form-login">
+        <h1>Sign In</h1>
+        <div class="form-text">
+            <label> Usename</label>
+            <input type="text">
+        </div>
+        <div class="form-text">
+            <label>Password</label>
+            <input type="password">
+        </div>
+
+
+        <button><a href="http://localhost:63342/untitled/TestCase/testcase.html?_ijt=7ng4p5hnaiongjd9vgrgfkmdqu">
+            Sign In</a></button>
+
+        <span>You no have account? Sign Up <a href=""> Click here</a></span>
+    </form>
+</div>
+<script>
+    const formLogin = document.querySelectorAll('.form-text input')
+    const formLabel = document.querySelectorAll('.form-text label')
+    for (let i = 0; i < 2; i++) {
+        formLogin[i].addEventListener("mouseover", function () {
+            formLabel[i].classList.add("focus")
+        })
+        formLogin[i].addEventListener("mouseout", function () {
+            if (formLogin[i].value == "") {
+                formLabel[i].classList.remove("focus")
+            }
+
+        })
+    }
+</script>
+
+
+</body>
+</html>
